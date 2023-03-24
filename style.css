@@ -1,0 +1,36 @@
+body
+{
+    background: radial-gradient(lightblue, rgb(59, 171, 232), skyblue);
+}
+.heading
+{
+    font-size: 30px;
+    width: 100%;
+    padding-top: 15px;
+    margin: 0px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    background: linear-gradient(pink 0%, rgb(230, 55, 84) 100%);
+    text-shadow: 5px 5px 15px black;
+    color: aliceblue;
+}
+
+#status, #number_of_objects 
+{
+font-size: 18px;
+}
+#label
+{
+    font-size: 18px;
+    padding-top: 20px;
+    letter-spacing: 0;
+}
+
+canvas
+{
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
