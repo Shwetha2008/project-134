@@ -43,27 +43,31 @@ function draw()
 {
     image(video, 0, 0, 400, 400);
     
-    if(object[i].label == "person")
+    
+    if(status != " ")
     {
         for(i = 0; i < object.length; i++)
         {
+            if(object[i].label == "person")
+            {
             document.getElementById("status").innerHTML = "Status : Baby Detected";
             audio.stop();
+            }
+            else
+            {
+                    document.getElementById("status").innerHTML = "Status : Baby not Detected";
+                    audio.play();
+            }
         }
+        if(object.length == 0)
+            {
+                
+                    document.getElementById("status").innerHTML = "Status : Baby not Detected";
+                    audio.stop();
+                
+            }
     }
-    else
-    {
-            document.getElementById("status").innerHTML = "Status : Baby not Detected";
-            audio.play();
-    }
-
-    if(object.length < 0)
-    {
-        
-            document.getElementById("status").innerHTML = "Status : Baby not Detected";
-            audio.stop();
-        
-    }
+   
 }
 
 
